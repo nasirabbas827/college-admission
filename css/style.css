@@ -1,0 +1,226 @@
+body {
+    background: linear-gradient(90deg, rgba(233, 246, 246, 0.831), rgba(207, 233, 233, 0.9));
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Common Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Gradient Backgrounds */
+.navbar.bg-gradient {
+    background: linear-gradient(to right, #1a237e, #0d47a1) !important;
+}
+
+.navbar.admin-navbar {
+    background: linear-gradient(to right, #1a237e, #0d47a1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-2px);
+}
+
+.navbar-brand i {
+    font-size: 1.75rem;
+    margin-right: 0.5rem;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Icons in Nav Links */
+.navbar-nav .nav-link i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* Hover Effect for Nav Items */
+.nav-item {
+    position: relative;
+    margin: 0 0.25rem;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Admin Specific Styles */
+.admin-navbar .nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.admin-navbar .navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: linear-gradient(to bottom, #1a237e, #0d47a1);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .nav-item::after {
+        display: none;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: none;
+    }
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+
+.container {
+    margin-bottom: 40px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table thead th {
+    background-color: #004d4d; /* Black color for header */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.table img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #006666; /* Lighter teal on hover */
+}
+
+
+a {
+    color: #006666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #004d4d;
+    text-decoration: underline;
+}
+
